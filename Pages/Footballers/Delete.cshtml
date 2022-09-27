@@ -1,0 +1,46 @@
+@page
+@model VubProjekt.Pages_Footballers.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Obriši igrača</h1>
+
+<h3>Jesi li siguran da želiš obrisati igrača?</h3>
+<div>
+    <h4>Igrač</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Footballer.FristName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Footballer.FristName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Footballer.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Footballer.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Footballer.Position)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Footballer.Position)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Footballer.MarketValue)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Footballer.MarketValue)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Footballer.ID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Nazad</a>
+    </form>
+</div>

@@ -1,0 +1,49 @@
+@page
+@model VubProjekt.Pages_Footballers.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Dodaj igrača</h1>
+
+<h4>Igrač</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Footballer.FristName" class="control-label"></label>
+                <input asp-for="Footballer.FristName" class="form-control" />
+                <span asp-validation-for="Footballer.FristName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Footballer.LastName" class="control-label"></label>
+                <input asp-for="Footballer.LastName" class="form-control" />
+                <span asp-validation-for="Footballer.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Footballer.Position" class="control-label"></label>
+                <input asp-for="Footballer.Position" class="form-control" />
+                <span asp-validation-for="Footballer.Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Footballer.MarketValue" class="control-label"></label>
+                <input asp-for="Footballer.MarketValue" class="form-control" />
+                <span asp-validation-for="Footballer.MarketValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Korak nazad</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

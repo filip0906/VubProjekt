@@ -1,0 +1,98 @@
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: royalblue;
+  }
+
+  
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    background-color: white;
+    text-decoration: underline;
+  }
+
+  header{
+    background-color:  royalblue;
+  }
+
+  li a:active {
+    background-color: #0000FF;
+  }
+  
+  nav{
+    background-color: royalblue;
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 5px solid;
+    border-color: royalblue;
+  }
+  
+  thead th:nth-child(1) {
+    width: 25%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 30%;
+  }
+  
+  th, td {
+    padding: 15px;
+    font-family: cursive;
+  }
+
+  p {
+    font-family: cursive;
+  }
+
+  h1 {
+    color: black;
+    font-family: cursive;
+  }
+
+  body{
+    margin: 5;
+  }
+
+  .container{
+    width: 80%;
+    margin: auto;
+    background-color: silver;
+    border-bottom: 5px royalblue solid;
+    border-top: 5px royalblue solid;
+    border-left: 5px royalblue solid;
+    border-right: 5px royalblue solid;
+  }
+
+  .box-1{
+    background-color: silver;
+    color: #000;
+  }
+
+  
